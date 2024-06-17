@@ -1,0 +1,26 @@
+
+# Spring Boot Logging Configuration
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    com.cantina: DEBUG
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: CantinaApp
+
+  data:
+    mongodb:
+      uri: mongodb+srv://eltongino3:SQu8DgHYHRGOkuV2@cluster2.mt4aqsu.mongodb.net/backCantina?retryWrites=true&w=majority&appName=Cluster2
+
+  jpa:
+    hibernate:
+      ddl-auto: none  # Disable Hibernate's automatic schema generation
+    properties:
+      hibernate:
+        format_sql: true
+    
